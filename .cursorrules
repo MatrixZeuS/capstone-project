@@ -1,0 +1,12 @@
+# Project Conventions
+
+## Stack
+- Frontend: React + Vite
+- Styling: Tailwind CSS
+- Package manager: npm
+
+## Conventions
+- Commit messages follow Conventional Commits (feat, fix, chore, docs, etc.)
+- Components go in /src/components
+- Use functional components with hooks, no class components
+- Keep functions small and single-purpose
