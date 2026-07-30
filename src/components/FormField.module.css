@@ -1,0 +1,29 @@
+.field{
+  display:flex;
+  flex-direction:column;
+  gap:8px;
+}
+.label{
+  font-size:14px;
+  color:var(--text-primary);
+  font-weight:600;
+  text-align: left;
+}
+.input{
+  height:54px;
+  padding:14px 16px;
+  border-radius:16px;
+  border:1px solid var(--border);
+  background:#fbfbfc;
+  font-size:16px;
+  color:var(--text-primary);
+  transition:border-color 160ms ease, box-shadow 160ms ease, transform 160ms ease;
+}
+.input:focus{
+  outline:none;
+  border-color:#000000;
+  box-shadow:0 6px 18px rgba(16,24,40,0.06);
+}
+.input.invalid{ border-color:var(--danger); }
+.desc{ font-size:13px; color:var(--text-secondary); margin:0 }
+.err{ font-size:13px; color:var(--danger); margin:0 }
