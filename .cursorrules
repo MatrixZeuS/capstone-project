@@ -1,12 +1,31 @@
-# Project Conventions
+# Project Rules
 
-## Stack
-- Frontend: React + Vite
-- Styling: Tailwind CSS
-- Package manager: npm
+## Forms
 
-## Conventions
-- Commit messages follow Conventional Commits (feat, fix, chore, docs, etc.)
-- Components go in /src/components
-- Use functional components with hooks, no class components
-- Keep functions small and single-purpose
+- Use React Hook Form for all forms.
+- Use Zod for schema-based validation.
+- Avoid manual form validation when a schema can be used.
+
+## Components
+
+- Prefer reusable components over duplicated JSX.
+- Keep components focused on a single responsibility.
+- Avoid unnecessary inline styles.
+
+## Accessibility
+
+- Every input must have an associated label.
+- Use aria-invalid and aria-describedby for validation errors.
+- Ensure keyboard accessibility for interactive elements.
+
+## Verification
+
+- Review the AI's implementation plan before approving code generation.
+- Run npm run lint before committing changes.
+- Run npm run build before committing changes.
+- Fix verification failures instead of bypassing them.
+
+## Testing
+
+- Add unit tests for new interactive components.
+- Verify validation logic through automated tests whenever possible.
